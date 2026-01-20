@@ -36,31 +36,12 @@
         <h1>Download <%= title %></h1>
         <div class="container mt-4">
           <p>
-            Download curl command for Visual Studio Code for Alpine Linux:
+            Download winget command for Docker for Alpine Linux:
           </p>
           <div class="card bg-dark text-success position-relative" style="height: 6vh">
             <div class="card-body font-monospace">
               <pre id="vscodeCommand" style="margin: 0">
-$ curl -L -o code.tar.gz 'https://code.visualstudio.com/sha/download?build=insider&os=cli-alpine-x64'
-          </pre
-              >
-              <button
-                class="btn btn-sm btn-outline-light position-absolute top-0 end-0 m-2"
-                onclick="copyCommand(this.previousElementSibling)"
-              >
-                Copy
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="container mt-4">
-          <p>
-            Download winget command for Visual Studio Code for Alpine Linux:
-          </p>
-          <div class="card bg-dark text-success position-relative" style="height: 6vh;">
-            <div class="card-body font-monospace">
-              <pre id="vscodeCommand" style="margin: 0">
-$ winget install --id Microsoft.VisualStudioCode -e
+$ winget install -e --id Docker.DockerDesktop
           </pre
               >
               <button
@@ -73,12 +54,12 @@ $ winget install --id Microsoft.VisualStudioCode -e
           </div>
                   <div class="container mt-4">
           <p>
-            Download Homebrew command for Visual Studio Code for Alpine Linux:
+            Download Homebrew command for Docker for Alpine Linux:
           </p>
-          <div class="card bg-dark text-success position-relative" style="height: 6vh;">
+          <div class="card bg-dark text-success position-relative" style="height: 6vh">
             <div class="card-body font-monospace">
               <pre id="vscodeCommand" style="margin: 0">
-$ brew install --cask visual-studio-code
+$ brew install --cask docker
           </pre
               >
               <button
@@ -91,9 +72,9 @@ $ brew install --cask visual-studio-code
           </div>
           <div class="container mt-5" id="downloadbutton">
             <a
-              href="https://code.visualstudio.com/Download"
+              href="https://docs.docker.com/get-started/get-docker/"
               class="btn btn-primary btn-lg"
-              >Zu VS Code</a
+              >Zu Docker</a
             >
           </div>
         </div>

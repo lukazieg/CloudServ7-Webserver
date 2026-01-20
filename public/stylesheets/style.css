@@ -1,8 +1,28 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+a {
+  color: #00b7ff;
 }
 
-a {
-  color: #00B7FF;
+#top-nav{
+  background-color: grey !important;
+}
+
+.nav-tabs .nav-link {
+  border: none;
+  color: #555;
+}
+
+.nav-tabs .nav-link.active {
+  border-bottom: 3px solid #e64a19;
+  font-weight: 600;
+  color: #000;
+}
+
+.download-btn {
+  background-color: #e64a19;
+  border-color: #e64a19;
+}
+
+.download-btn:hover {
+  background-color: #d84315;
+  border-color: #d84315;
 }
