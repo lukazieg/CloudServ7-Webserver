@@ -21,7 +21,6 @@ jobs:
           node-version: 20
 
       - name: Install dependencies # Installs npm packages
-        working-directory: ./Webseite
         run: npm ci
 
       - name: Log in to Docker Hub # Login Data saved in GitHub Secrets
