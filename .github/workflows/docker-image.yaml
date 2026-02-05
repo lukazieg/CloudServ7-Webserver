@@ -31,7 +31,7 @@ jobs:
 
       - name: Build Docker image # Builds Image with latest tag
         run: |
-          docker build -t fdai7814/express-web:latest ./Webseite
+          docker build -t fdai7814/express-web:latest 
 
       - name: Push Docker image # Pushes Image to Docker Hub ONLY IF build is successful
         run: |
