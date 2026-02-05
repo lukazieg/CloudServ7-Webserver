@@ -3,9 +3,7 @@ name: Build Docker Image
 on:
   push:
     branches:
-      - Lukas          # baue bei Push auf Lukas
-    tags:
-      - 'v*'          # oder bei Tags wie v1.0.0
+      - main          # baue bei Push auf main
   workflow_dispatch:   # manuell auslösbar im GitHub UI
 
 jobs:
