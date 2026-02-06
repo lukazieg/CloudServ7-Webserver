@@ -1,22 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: webserver
-  labels:
-    app: webserver
+  name: cloudserv7-webserver
+  namespace: cloudserv7-apps
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: webserver
+      app: cloudserv7-webserver
   template:
     metadata:
       labels:
-        app: webserver
+        app: cloudserv7-webserver
     spec:
       containers:
         - name: webserver
-          image: registry.gitlab.com/<DEIN_USER>/<DEIN_REPO>:latest
-          imagePullPolicy: Always
+          image: cloudserv7/webserver:1.0.0
           ports:
             - containerPort: 3000
