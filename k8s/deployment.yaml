@@ -1,17 +1,17 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: cloudserv7-webserver
+  name: webserver
   namespace: cloudserv7-apps
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: cloudserv7-webserver
+      app: webserver
   template:
     metadata:
       labels:
-        app: cloudserv7-webserver
+        app: webserver
     spec:
       containers:
         - name: webserver
