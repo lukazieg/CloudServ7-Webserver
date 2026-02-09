@@ -1,16 +1,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: express-web
+  name: webserver
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: express-web
+      app: webserver
   template:
     metadata:
       labels:
-        app: express-web
+        app: webserver
     spec:
       containers:
         - name: web
