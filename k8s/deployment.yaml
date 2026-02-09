@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: webserver
-  namespace: cloudserv7-apps
+  name: express-web
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: webserver
+      app: express-web
   template:
     metadata:
       labels:
-        app: webserver
+        app: express-web
     spec:
       containers:
-        - name: webserver
-          image: cloudserv7/webserver:1.0.0
+        - name: web
+          image: fdai7814/express-web:latest
+          imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 3000
