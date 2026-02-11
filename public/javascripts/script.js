@@ -1,3 +1,5 @@
+// Funktion zum Kopieren des Befehls in die Zwischenablage
+// Wird genutzt in /vscode, /docker und /eclipse
 function copyCommand(element) {
   const command = element.innerText.trim();
   const sliced = command.slice(2);

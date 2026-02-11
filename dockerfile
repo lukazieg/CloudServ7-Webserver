@@ -1,9 +1,11 @@
 FROM node:20-alpine
 
+# Arbeitsverzeichnis im Container 
 WORKDIR /app
 
 COPY package*.json ./
-RUN npm ci --only=production
+# Installiert Dependencies
+RUN npm ci --only=production 
 
 COPY . .
 
